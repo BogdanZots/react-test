@@ -3,7 +3,7 @@ import s from "./Table.module.css";
 import SortArrow from "../sortArrow/SortArrow";
 import {sortFields} from "../../consts/consts";
 
-const Table = ({data, sortData, directionSort, setCurrentUserData}) => {
+export const Table = ({data, sortData, directionSort, setCurrentUserData}) => {
     const [fieldToSearch,
         setFieldToSearch] = useState("");
     const sortField = (field) => {
@@ -82,4 +82,4 @@ const Table = ({data, sortData, directionSort, setCurrentUserData}) => {
     );
 };
 Table.whyDidYouRender = true
-export default Table;
+export const MemoTable  = React.memo(Table);

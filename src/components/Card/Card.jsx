@@ -17,8 +17,7 @@ const Card = ({ currentUser }) => {
         <div class={s.name} onClick={() => onChangeState()}>
           <h2>
             Selected Profile :{" "}
-            {state.name}
-           {/*  {currentUser.firstName + " " + currentUser.lastName} */}
+            {currentUser.firstName + " " + currentUser.lastName}
           </h2>
           <h4>Description : {currentUser.description}</h4>
         </div>

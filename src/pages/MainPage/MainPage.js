@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { useApiData } from "../../hooks/useApiData";
-import Table from "../../components/Table/Table";
+import {Table} from "../../components/Table/Table";
 import Loader from "../../components/Loader/Loader";
 import s from "./MainPage.module.css";
 import Card from "../../components/Card/Card";
